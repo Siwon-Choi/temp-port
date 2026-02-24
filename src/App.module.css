@@ -1,0 +1,10 @@
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* 예: App.module.css 또는 공통 css */
+section {
+  scroll-margin-top: 10px;
+}
