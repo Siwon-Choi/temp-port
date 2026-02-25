@@ -29,6 +29,85 @@ const Footer = () => {
         <div>푸터입니다</div>
         <div>푸터입니다</div>
         <div>푸터입니다</div>
+                <div>푸터입니다</div>
+        <div>푸터입니다</div>
+        <div>푸터입니다</div>
+        <div>푸터입니다</div>
+        <div>푸터입니다</div>
+        <div>푸터입니다</div>
+        <div>푸터입니다</div>
+        <div>푸터입니다</div>
+        <div>푸터입니다</div>
+        <div>푸터입니다</div>
+        <div>푸터입니다</div>
+        <div>푸터입니다</div>
+        <div>푸터입니다</div>
+
+        <div>푸터입니다</div>
+        <div>푸터입니다</div>
+        <div>푸터입니다</div>
+        <div>푸터입니다</div>
+        <div>푸터입니다</div>
+        <div>푸터입니다</div>
+
+        <div>푸터입니다</div>
+        <div>푸터입니다</div>
+        <div>푸터입니다</div>
+        <div>푸터입니다</div>
+        <div>푸터입니다</div>
+                <div>푸터입니다</div>
+        <div>푸터입니다</div>
+        <div>푸터입니다</div>
+        <div>푸터입니다</div>
+        <div>푸터입니다</div>
+        <div>푸터입니다</div>
+        <div>푸터입니다</div>
+        <div>푸터입니다</div>
+        <div>푸터입니다</div>
+        <div>푸터입니다</div>
+        <div>푸터입니다</div>
+        <div>푸터입니다</div>
+        <div>푸터입니다</div>
+
+        <div>푸터입니다</div>
+        <div>푸터입니다</div>
+        <div>푸터입니다</div>
+        <div>푸터입니다</div>
+        <div>푸터입니다</div>
+        <div>푸터입니다</div>
+
+        <div>푸터입니다</div>
+        <div>푸터입니다</div>
+        <div>푸터입니다</div>
+        <div>푸터입니다</div>
+        <div>푸터입니다</div>
+                <div>푸터입니다</div>
+        <div>푸터입니다</div>
+        <div>푸터입니다</div>
+        <div>푸터입니다</div>
+        <div>푸터입니다</div>
+        <div>푸터입니다</div>
+        <div>푸터입니다</div>
+        <div>푸터입니다</div>
+        <div>푸터입니다</div>
+        <div>푸터입니다</div>
+        <div>푸터입니다</div>
+        <div>푸터입니다</div>
+        <div>푸터입니다</div>
+
+        <div>푸터입니다</div>
+        <div>푸터입니다</div>
+        <div>푸터입니다</div>
+        <div>푸터입니다</div>
+        <div>푸터입니다</div>
+        <div>푸터입니다</div>
+
+        <div>푸터입니다</div>
+        <div>푸터입니다</div>
+        <div>푸터입니다</div>
+        <div>푸터입니다</div>
+        <div>푸터입니다</div>
+        
 
     </footer>
   )
