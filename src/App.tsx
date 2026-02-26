@@ -11,9 +11,10 @@ import Others from './components/Others/Others'
 
 function App() {
 
+  // url 값 및 변경 추적
   const location = useLocation();
 
-  // #skills 같은 주소로 왔을 때 자동 스크롤
+  // #hash 이동
   useEffect(() => {
     if (!location.hash) return;
 
@@ -26,15 +27,16 @@ function App() {
     });
   }, [location]);
 
+  // 구성
   return (
     <div className={styles.app}>
       <Header />
-<main>
-  <section id="home" className={styles.homeSection}><Home /></section>
-  <section id="skills"><Skills /></section>
-  <section id="projects"><Projects /></section>
-  <section id="others"><Others /></section>
-</main>
+      <main>
+        <section id="home" className={styles.homeSection}><Home /></section>
+        <section id="skills"><Skills /></section>
+        <section id="projects"><Projects /></section>
+        <section id="others"><Others /></section>
+      </main>
       <Footer />
     </div>
   )

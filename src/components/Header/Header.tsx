@@ -11,7 +11,7 @@ const Header = () => {
   ) => {
     e.preventDefault();
 
-    // 홈(/)이면 바로 스크롤
+    // 홈이면 바로 스크롤
     if (location.pathname === "/") {
       document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
       return;

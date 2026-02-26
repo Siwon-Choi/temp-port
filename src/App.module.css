@@ -2,11 +2,12 @@
   margin: 0 auto;
 }
 
-/* 예: App.module.css 또는 공통 css */
+/* header 높이를 고려한 스크롤 마진 설정 */
 section {
   scroll-margin-top: 72px;
 }
 
+/* 첫 화면은 화면에 꽉 차게 설정, header가 72p인 것 고려 */
 .homeSection{
-  height: calc(100vh - 72px); /* ✅ 첫 화면 고정 */
+  height: calc(100vh - 72px); 
 }

@@ -1,7 +1,7 @@
 /* Header.module.css */
 
 .header {
-  position: fixed;          /* 상단 고정 */
+  position: fixed;          
   top: 0;
   left: 0;
   right: 0;
@@ -14,14 +14,14 @@
   height: 72px;
   padding: 0 48px;
 
-  background: #22324a;      /* 네이비 톤 */
+  background: #22324a;      
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 
-  border-radius: 0;         /* 라운드 제거 */
-  margin-bottom: 0;         /* fixed라 필요 없음 */
+  border-radius: 0;         
+  margin-bottom: 0;         
 }
 
-/* 로고 */
+
 .logo {
   font-size: 22px;
   font-weight: 800;
@@ -31,14 +31,12 @@
   user-select: none;
 }
 
-/* 메뉴 영역 */
 .nav {
   display: flex;
   align-items: center;
   gap: 28px;
 }
 
-/* TSX가 button이니까 button 스타일 */
 .nav button {
   background: transparent;
   border: 0;
@@ -47,7 +45,7 @@
   font-size: 18px;
   font-weight: 700;
 
-  color: rgba(255, 255, 255, 0.55);   /* 기본은 회색 */
+  color: rgba(255, 255, 255, 0.55);   
   cursor: pointer;
 
   transition: color 0.15s ease, opacity 0.15s ease;
@@ -57,15 +55,11 @@
   color: rgba(255, 255, 255, 0.85);
 }
 
-/* “Home”처럼 선택된 느낌 주고 싶으면 TSX에서 className 붙여서 사용 */
+
 .active {
   color: #ffffff !important;
 }
-
-/* (옵션) 헤더 때문에 첫 섹션이 가려지지 않게: 페이지 최상단에 padding-top 주는 걸 추천 */
-/* 예: layout이나 App에서 body/컨테이너에 padding-top: 72px; */
-
-/* 반응형 */
+/* 
 @media (max-width: 768px) {
   .header {
     padding: 0 20px;
@@ -84,20 +78,4 @@
     font-size: 16px;
     padding: 8px 4px;
   }
-}
-
-/* 기존에 있던 logoutButton도 같은 톤으로 맞추려면 */
-.logoutButton {
-  background: transparent;
-  border: 0;
-  font-size: 16px;
-  font-weight: 700;
-  color: rgba(255, 255, 255, 0.55);
-  cursor: pointer;
-  padding: 10px 6px;
-  transition: color 0.15s ease;
-}
-
-.logoutButton:hover {
-  color: rgba(255, 255, 255, 0.85);
-}
+} */
