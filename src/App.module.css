@@ -4,5 +4,9 @@
 
 /* 예: App.module.css 또는 공통 css */
 section {
-  scroll-margin-top: 10px;
+  scroll-margin-top: 72px;
+}
+
+.homeSection{
+  height: calc(100vh - 72px); /* ✅ 첫 화면 고정 */
 }

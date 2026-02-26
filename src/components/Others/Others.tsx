@@ -1,9 +1,9 @@
 // src/pages/Skills/Skills.tsx
-import styles from './Projects.module.css'
+import styles from './Others.module.css'
 
-const Projects = () => {
+const Others = () => {
     return(
-        <section id="projects" className={styles.about}>
+        <section id="others" className={styles.about}>
             <h2 className={styles.title}>About Me</h2>
             <div className={styles.content}>
                 <div className={styles.info}>
@@ -50,4 +50,4 @@ const Projects = () => {
     )
 }
 
-export default Projects
+export default Others

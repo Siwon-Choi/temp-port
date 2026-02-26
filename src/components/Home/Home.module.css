@@ -1,61 +1,154 @@
-.hero {
-  position: relative;
-  min-height: 576px;
+.home {
   height: calc(100vh - 72px);
-}
-
-/* 배경 이미지 */
-.bg {
-  position: absolute;
-  inset: 0;
-  background-image: url("/background.jpg"); 
-  background-size: cover;
-  background-position: center;
-}
-
-/* 글자 가독성용 */
-.overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.35);
-}
-
-/* 이미지 위에 올라가는 텍스트 */
-.content {
-  position: relative; /* bg/overlay 위로 오게 */
-  z-index: 2;
-
-  height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  text-align: center;
-  padding: 0 24px;
-  color: #fff;
 }
 
-.title {
+.hero {
+  flex: 8;
+  position: relative;
+  overflow: hidden;
+}
+
+.bottom {
+  flex: 5;
+  display: grid;
+  grid-template-columns: 424fr 1016fr; /* ✅ 424:1016 비율 */
+  align-items: center;
+  gap: 32px;
+  padding: 48px 64px;
+  background: #22324a;      /* 네이비 톤 */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+  /* 배경 이미지 */
+  .bg {
+    position: absolute;
+    inset: 0;
+    background-image: url("/background.jpg"); 
+    background-size: cover;
+    background-position: center;
+  }
+
+  /* 글자 가독성용 */
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+  }
+
+  /* 이미지 위에 올라가는 텍스트 */
+  .content {
+    position: relative; /* bg/overlay 위로 오게 */
+    z-index: 2;
+
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    padding: 0 24px;
+    color: #fff;
+  }
+
+  .title {
+    font-size: 56px;
+    font-weight: 900;
+    line-height: 1.15;
+    text-shadow: 0 6px 18px rgba(0,0,0,0.45);
+  }
+
+  .subtitle {
+    margin-top: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    opacity: 0.9;
+    text-shadow: 0 6px 18px rgba(0,0,0,0.45);
+  }
+  /* 좌측(사진 칸) */
+.bottomLeft {
+  display: grid;
+  place-items: center; /* ✅ 원형 중앙 정렬 */
+}
+
+.avatar {
+  width: 280px;       /* 원 크기: 원하는 값으로 */
+  aspect-ratio: 1 / 1;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.avatarImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* ✅ 원 안에 꽉 채우기 */
+  display: block;
+}
+
+/* 우측(프로필 칸) */
+.bottomRight {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+/* 이름 + 링크 3개 */
+.profileHeader {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.name {
+  margin: 0;
   font-size: 56px;
   font-weight: 900;
-  line-height: 1.15;
-  text-shadow: 0 6px 18px rgba(0,0,0,0.45);
 }
 
-.subtitle {
-  margin-top: 18px;
-  font-size: 18px;
+.links {
+  display: flex;
+  gap: 14px;
+}
+
+.linkBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  padding: 0 14px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+/* 2줄 정보(각 줄 2칸) */
+.profileInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.infoRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* ✅ 좌/우 */
+  gap: 40px;
+}
+
+.infoItem {
+  font-size: 22px;
   font-weight: 600;
-  opacity: 0.9;
-  text-shadow: 0 6px 18px rgba(0,0,0,0.45);
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
-@media (max-width: 768px) {
-  .title {
-    font-size: 36px;
+  @media (max-width: 768px) {
+    .title {
+      font-size: 36px;
+    }
+    .subtitle {
+      font-size: 15px;
+    }
   }
-  .subtitle {
-    font-size: 15px;
-  }
-}
